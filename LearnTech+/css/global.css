@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+header {
+
+    width: 100%;
+    height: 120px;
+    background: #172035;
+    /*position: absolute;*/
+}
+
+img#logo {
+    position: relative;
+    margin: 8px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav a {
+    font-size: 17px;
+	color: white;
+	text-decoration: none;
+    text-align: center;
+	font-weight: 2;
+    font-family: sans-serif;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a#active {
+    background-color: darkcyan;
+    pointer-events: none;
+
+}
+nav a#active::after {
+    width: 100%;
+    background: yellow;
+}
+
+nav a::after {
+
+    content: '';
+    width: 0;
+    height: 4px;
+    background: cyan;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+nav a:hover {
+    background : purple;
+}
+
+nav a:hover::after {
+    height: 4px;
+    width: 100%;
+    background-color: #ff4433;
+}
+
+button {
+    width: 50%;
+    height: 50px;
+    background: #172035;
+    color: white;
+    font-size: 17px;
+    border:none;
+}
+
+button:hover {
+    background: #09568d;
+}
+
+@media screen and (max-width: 625px) {
+    header {
+        height: 140px;
+    }
+}
+
+/*h1 {*/
+/*    font-size: 4em;*/
+/*}*/
+
+/*h3 {*/
+/*    font-size: 2em;*/
+/*}*/
+
+/*p {*/
+/*    font-size: 2em;*/
+/*}*/
+
+/*
+====================================================================================================================================================================
+                                                    End Global Properties 
+====================================================================================================================================================================
+*/
